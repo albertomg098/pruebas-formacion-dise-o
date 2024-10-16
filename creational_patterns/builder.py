@@ -55,6 +55,9 @@ class Director:
         self._builder = None
 
     @property
+    def builder(self) -> Builder:
+        return self._builder
+    @builder.setter
     def builder(self, builder: Builder) -> None:
         self._builder = builder
 
@@ -65,6 +68,20 @@ class Director:
         self._builder.create_part_A()
         self._builder.create_part_B()
         self._builder.create_part_C()
-    
+
 if __name__ == "__main__":
-    
+    builder = ConcreteBuilder1()
+    director = Director()
+    director.builder = builder
+
+    print("Standard Basic Product")
+    director.build_minimal_viable_product()
+    builder.product.list_parts()
+
+    print("\n")
+
+    print("Custom Product:")
+    builder.create_part_A()
+    builder.create_part_B()
+    builder.product.list_parts()
+    print("\n")
