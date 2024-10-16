@@ -1,1 +1,1 @@
-# pruebas-formacion-dise-o
+# pruebas-formacion-diseno
