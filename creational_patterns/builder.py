@@ -9,7 +9,7 @@ class Product1:
         self.parts.append(part)
 
     def list_parts(self):
-        print(f"Product parts: {','.join(self.parts)}", end = "")
+        print(f"Product parts: {', '.join(self.parts)}", end = "")
 
 class Builder(ABC):
     @property
@@ -78,6 +78,11 @@ if __name__ == "__main__":
     director.build_minimal_viable_product()
     builder.product.list_parts()
 
+    print("\n")
+
+    print("Standard full featured product:")
+    director.build_full_featured_product()
+    builder.product.list_parts()
     print("\n")
 
     print("Custom Product:")
