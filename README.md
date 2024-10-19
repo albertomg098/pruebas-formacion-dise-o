@@ -14,3 +14,5 @@ Patrones::
  - [structural_patterns](structural_patterns)
    * [Adapter](structural_patterns/adapter.py)
        ![Esquema](assets/images/adapter.png)
+   * [Bridge](structural_patterns/bridge.py)
+       ![Esquema](assets/images/bridge.png)
