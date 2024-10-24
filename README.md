@@ -16,3 +16,7 @@ Patrones::
        ![Esquema](assets/images/adapter.png)
    * [Bridge](structural_patterns/bridge.py)
        ![Esquema](assets/images/bridge.png)
+   * [Composite](structural_patterns/composite.py)
+       ![Esquema](assets/images/composite.png)
+   * [Decorator](structural_patterns/decorator.py)
+       ![Esquema](assets/images/decorator.png)
